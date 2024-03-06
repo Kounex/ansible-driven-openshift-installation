@@ -1,0 +1,61 @@
+---
+all:
+  vars:
+    ansible_python_interpreter: "{{ ansible_playbook_python }}"
+    ansible_connection: local
+    artifacts_dir: /tmp
+    upload_host: https://cdi-uploadproxy-openshift-cnv.apps.isar.coe.muc.redhat.com
+    namespace: rbohne-sno
+    ipa_host: inf1.coe.muc.redhat.com
+
+    base_domain: coe.muc.redhat.com
+    network_ip_address_prefix_length: 20
+    network: 10.32.96.0
+    network_dns_server: 10.32.96.1
+    network_default_gw: 10.32.111.254
+
+  hosts:
+    sno210:
+      cluster_name: rbohne-sno210
+      network_ip_address: 10.32.98.210
+      network_mac_address: 0E:C0:EF:20:62:D2
+    sno211:
+      cluster_name: rbohne-sno211
+      network_ip_address: 10.32.98.211
+      network_mac_address: 0E:C0:EF:20:62:D3
+    sno212:
+      cluster_name: rbohne-sno212
+      network_ip_address: 10.32.98.212
+      network_mac_address: 0E:C0:EF:20:62:D4
+    sno213:
+      cluster_name: rbohne-sno213
+      network_ip_address: 10.32.98.213
+      network_mac_address: 0E:C0:EF:20:62:D5
+    sno214:
+      cluster_name: rbohne-sno214
+      network_ip_address: 10.32.98.214
+      network_mac_address: 0E:C0:EF:20:62:D6
+    sno215:
+      cluster_name: rbohne-sno215
+      network_ip_address: 10.32.98.215
+      network_mac_address: 0E:C0:EF:20:62:D7
+    sno216:
+      cluster_name: rbohne-sno216
+      network_ip_address: 10.32.98.216
+      network_mac_address: 0E:C0:EF:20:62:D8
+    sno217:
+      cluster_name: rbohne-sno217
+      network_ip_address: 10.32.98.217
+      network_mac_address: 0E:C0:EF:20:62:D9
+    sno218:
+      cluster_name: rbohne-sno218
+      network_ip_address: 10.32.98.218
+      network_mac_address: 0E:C0:EF:20:62:DA
+    sno219:
+      cluster_name: rbohne-sno219
+      network_ip_address: 10.32.98.219
+      network_mac_address: 0E:C0:EF:20:62:DB
+    sno220:
+      cluster_name: rbohne-sno220
+      network_ip_address: 10.32.98.220
+      network_mac_address: 0E:C0:EF:20:62:DC
